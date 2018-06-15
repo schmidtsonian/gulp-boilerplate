@@ -1,0 +1,32 @@
+#!/bin/bash
+
+bold=$(tput bold)
+normal=$(tput sgr0)
+
+echo " "
+echo "Hello alien, these ${bold}commands${normal} may help you in your ninja path"
+echo " "
+echo "${bold}make deps${normal}"
+echo "       Make executables bash scripts Install packages"
+echo " "
+echo "${bold}make bw${normal}"
+echo "       Short hand to build the project and watch for the changes"
+echo " "
+echo "${bold}make rebuild${normal}"
+echo "       Remove node modules, public directory, reinstall dependencies,"
+echo "       build the project and watch for changes"
+echo " "
+echo "${bold}make build${normal}"
+echo "       Build the project"
+echo " "
+echo "${bold}make watch${normal}"
+echo "       Watch for changes"
+echo " "
+echo "${bold}make clean${normal}"
+echo "       Remove node modules and public directory"
+echo " "
+echo "${bold}make template${normal}"
+echo "       Generates a new pug and json files"
+echo " "
+echo "${bold}make scaffold${normal}"
+echo "       Generates pug, json, scss and javascript files"
