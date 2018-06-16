@@ -8,14 +8,13 @@ Dependencies
 Features:
 - SCSS
 - PUG
-- javascript babel
+- JavaScript babel
 - JSON files to fill content
 - "make" command to scaffold the project
 
 How to use it:
 - Clone repository
 - run: ``make help``
-
 
 TODO:
 - Add scaffold command

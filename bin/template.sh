@@ -1,19 +1,24 @@
 #!/bin/bash
 
-echo "Name of template (kebab-case)?"
-read -r NAME
+echo "Name of template?"
+read -r name
 
-mkdir src/pugs/$NAME
+templateName=`echo "$name" | tr '[A-Z]' '[a-z]' | sed 's/[^a-z  A-Z]//g' | tr ' ' '-'`
+
+mkdir src/pugs/$templateName
 echo "extends ../_layout/master/_master
 
 block body
 
-  #$NAME.h-invisible
-    h1 about" > src/pugs/$NAME/index.pug
+  #$templateName.h-invisible
+    h1 about" > src/pugs/$templateName/index.pug
 
+echo src/pugs/$templateName/index.pug done
 
 echo "{
-  \"$NAME\": {
-    \"title\": \"hello $NAME\"
+  \"$templateName\": {
+    \"title\": \"hello $templateName\"
   }
-}" > src/assets/jsons/page-$NAME.json
+}" > src/assets/jsons/page-$templateName.json
+
+echo src/assets/jsons/page-$templateName.json done
