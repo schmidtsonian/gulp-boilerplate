@@ -23,11 +23,17 @@ watch:
 clean:
 	@bin/clean.sh
 
+clean-public:
+	@bin/clean-public.sh
+
 
 
 
 template:
 	@bin/template.sh
+
+remove-template:
+	@bin/remove-template.sh
 
 scaffold:
 	@bin/scaffold.sh
