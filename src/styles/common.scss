@@ -1,30 +1,30 @@
 @import
-    '_vendor/reset',
-    '_vendor/boostrap';
+  '_vendor/reset',
+  '_vendor/boostrap';
 
 @import
-    '_globals/settings',
-    '_globals/easings',
-    '_globals/fonts';
-
-
-@import
-    '_layout/master/body',
-    '_layout/master/svgs',
-    '_layout/master/loader';
+  '_globals/settings',
+  '_globals/easings',
+  '_globals/fonts';
 
 
 @import
-    '_utilities/mixins/abs-align',
-    '_utilities/mixins/document-states',
-    '_utilities/mixins/media-queries',
-    '_utilities/mixins/text';
+  '_layout/master/body',
+  '_layout/master/svgs',
+  '_layout/master/loader';
+
 
 @import
-    '_utilities/helpers/abs-align',
-    '_utilities/helpers/abs-bg',
-    '_utilities/helpers/lazy-img',
-    '_utilities/helpers/text';
+  '_utilities/mixins/abs-align',
+  '_utilities/mixins/document-states',
+  '_utilities/mixins/media-queries',
+  '_utilities/mixins/text';
 
 @import
-    '_views/home/home';
+  '_utilities/helpers/abs-align',
+  '_utilities/helpers/abs-bg',
+  '_utilities/helpers/lazy-img',
+  '_utilities/helpers/text';
+
+@import
+  '_templates/home/home';

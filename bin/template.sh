@@ -7,20 +7,59 @@ read -r name
 
 templateName=`echo "$name" | tr '[A-Z]' '[a-z]' | sed 's/[^a-z  A-Z]//g' | tr ' ' '-'`
 
-mkdir $PATH_PUGS/$templateName
+directoryPug=$PATH_PUGS/$templateName
+filePug=$directoryPug/index.pug
+
+fileJson=$PATH_JSONS/page-$templateName.json
+
+directoryScss=$PATH_SCSS_TEMPLATES/$templateName
+fileRootScss=$directoryScss/_$templateName.scss
+fileBaseScss=$directoryScss/_$templateName-[base].scss
+
+
+
+mkdir $directoryPug
 echo "extends ../_layout/master/_master
 
 block body
 
   #$templateName.h-invisible
-    h1 about" > $PATH_PUGS/$templateName/index.pug
+    h1 about" > $filePug
 
-echo "${TEXT_COLOR_GREEN} $PATH_PUGS/$templateName/index.pug ${TEXT_NORMAL} done"
+echo "${TEXT_COLOR_GREEN}$filePug${TEXT_NORMAL} done"
+
+
+
 
 echo "{
   \"$templateName\": {
     \"title\": \"hello $templateName\"
   }
-}" > $PATH_JSONS/page-$templateName.json
+}" > $fileJson
 
-echo "${TEXT_COLOR_GREEN} $PATH_JSONS/page-$templateName.json ${TEXT_NORMAL} done"
+echo "${TEXT_COLOR_GREEN}$fileJson${TEXT_NORMAL} done"
+
+
+
+
+mkdir $directoryScss
+echo "
+/*=============================================
+=                 $templateName               =
+=============================================*/
+
+/*----------  Core  ----------*/
+@import '$templateName-[base]';
+
+/*----------  Enhacements  ----------*/
+
+" > $fileRootScss
+
+echo "${TEXT_COLOR_GREEN}$fileRootScss${TEXT_NORMAL} done"
+
+
+
+
+echo "" > $fileBaseScss
+
+echo "${TEXT_COLOR_GREEN}$fileBaseScss${TEXT_NORMAL} done"
