@@ -35,5 +35,8 @@ template:
 remove-template:
 	@bin/remove-template.sh
 
+atom:
+	@bin/atom.sh
+
 scaffold:
 	@bin/scaffold.sh
