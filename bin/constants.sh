@@ -8,5 +8,7 @@ TEXT_COLOR_BLuE=$(tput setaf 3)
 
 PATH_JSONS=src/assets/jsons
 PATH_PUGS=src/pugs
+PATH_PUGS_ATOMS=src/pugs/_atoms
+
 PATH_SCSS_TEMPLATES=src/styles/_templates
 PATH_SCSS_ATOMS=src/styles/_atoms

@@ -6,20 +6,27 @@ echo "Name of atom?"
 read -r name
 
 atomName=`echo "$name" | tr '[A-Z]' '[a-z]' | sed 's/[^a-z  A-Z]//g' | tr ' ' '-'`
+atomNameSnakeCase=`echo "$name" | tr '[A-Z]' '[a-z]' | sed 's/[^a-z  A-Z]//g' | tr ' ' '_'`
 
 directoryScss=$PATH_SCSS_ATOMS/$atomName
-fileRootScss=$directoryScss/_$atomName.scss
-fileBaseScss=$directoryScss/_$atomName-[base].scss
+fileRootScss=$directoryScss/_atom-$atomName.scss
+fileBaseScss=$directoryScss/_atom-$atomName-[base].scss
 
+filePug=$PATH_PUGS_ATOMS/_atom-$atomName.pug
+
+echo "mixin atom_$atomNameSnakeCase()" > $filePug
+
+echo "${TEXT_COLOR_GREEN}$filePug${TEXT_NORMAL} done"
 
 mkdir $directoryScss
+
 echo "
 /*=============================================
-=                   $atomName                 =
+=                 atom-$atomName              =
 =============================================*/
 
 /*----------  Core  ----------*/
-@import '$atomName-[base]';
+@import 'atom-$atomName-[base]';
 
 /*----------  Enhacements  ----------*/
 
