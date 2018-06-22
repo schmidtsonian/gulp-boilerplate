@@ -16,7 +16,7 @@ filePug=$PATH_PUGS_ATOMS/_atom_$atomNameSnakeCase.pug
 
 echo "mixin atom_$atomNameSnakeCase()" > $filePug
 
-echo "${TEXT_COLOR_GREEN}$filePug${TEXT_NORMAL} done"
+echo "${TEXT_COLOR_BLUE}$filePug${TEXT_NORMAL} done"
 
 mkdir $directoryScss
 
@@ -32,6 +32,6 @@ echo "
 
 " > $fileRootScss
 
-echo "${TEXT_COLOR_GREEN}$fileRootScss${TEXT_NORMAL} done"
+echo "${TEXT_COLOR_BLUE}$fileRootScss${TEXT_NORMAL} done"
 
 echo "" > $fileBaseScss

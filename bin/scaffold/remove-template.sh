@@ -26,7 +26,7 @@ read -r confirm
 
 if [[ $confirm == 'y' || $confirm == 'Y' ]]; then
 
-  echo "${TEXT_BOLD}You are de boss...${TEXT_NORMAL}"
+  echo "${TEXT_BOLD}You are the boss...${TEXT_NORMAL}"
 
   rm -rf $directoryPug
   echo "${TEXT_COLOR_RED}$filePug${TEXT_NORMAL} done"

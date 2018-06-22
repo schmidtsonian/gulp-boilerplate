@@ -26,7 +26,7 @@ block body
   #$templateName.h-invisible
     h1 about" > $filePug
 
-echo "${TEXT_COLOR_GREEN}$filePug${TEXT_NORMAL} done"
+echo "${TEXT_COLOR_BLUE}$filePug${TEXT_NORMAL} done"
 
 
 
@@ -37,7 +37,7 @@ echo "{
   }
 }" > $fileJson
 
-echo "${TEXT_COLOR_GREEN}$fileJson${TEXT_NORMAL} done"
+echo "${TEXT_COLOR_BLUE}$fileJson${TEXT_NORMAL} done"
 
 
 
@@ -55,11 +55,11 @@ echo "
 
 " > $fileRootScss
 
-echo "${TEXT_COLOR_GREEN}$fileRootScss${TEXT_NORMAL} done"
+echo "${TEXT_COLOR_BLUE}$fileRootScss${TEXT_NORMAL} done"
 
 
 
 
 echo "" > $fileBaseScss
 
-echo "${TEXT_COLOR_GREEN}$fileBaseScss${TEXT_NORMAL} done"
+echo "${TEXT_COLOR_BLUE}$fileBaseScss${TEXT_NORMAL} done"
