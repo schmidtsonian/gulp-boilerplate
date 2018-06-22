@@ -2,16 +2,16 @@
 
 source bin/constants.sh
 
-echo "Name of atom?"
+echo "Name of organism?"
 read -r name
 
-atomName=`echo "$name" | tr '[A-Z]' '[a-z]' | sed 's/[^a-z  A-Z]//g' | tr ' ' '-'`
-atomNameSnakeCase=`echo "$name" | tr '[A-Z]' '[a-z]' | sed 's/[^a-z  A-Z]//g' | tr ' ' '_'`
+organismName=`echo "$name" | tr '[A-Z]' '[a-z]' | sed 's/[^a-z  A-Z]//g' | tr ' ' '-'`
+organismNameSnakeCase=`echo "$name" | tr '[A-Z]' '[a-z]' | sed 's/[^a-z  A-Z]//g' | tr ' ' '_'`
 
-directoryScss=$PATH_SCSS_ATOMS/$atomName
-fileRootScss=$directoryScss/_atom-$atomName.scss
-fileBaseScss=$directoryScss/_atom-$atomName-[base].scss
-filePug=$PATH_PUGS_ATOMS/_atom_$atomNameSnakeCase.pug
+directoryScss=$PATH_SCSS_ORGANISMS/$organismName
+fileRootScss=$directoryScss/_organism-$organismName.scss
+fileBaseScss=$directoryScss/_organism-$organismName-[base].scss
+filePug=$PATH_PUGS_ORGANISMS/_organism_$organismNameSnakeCase.pug
 
 echo "${TEXT_BOLD}Are you sure you want to delete this:${TEXT_NORMAL}"
 echo $fileBaseScss

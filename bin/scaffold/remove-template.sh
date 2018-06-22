@@ -20,7 +20,7 @@ echo $directoryPug
 echo $fileJson
 echo $fileRootScss
 echo $fileBaseScss
-echo $directoryScss
+echo $directoryScss/
 echo "${TEXT_BOLD}[Y/n]?${TEXT_NORMAL}"
 read -r confirm
 
@@ -38,7 +38,7 @@ if [[ $confirm == 'y' || $confirm == 'Y' ]]; then
   rm -rf $directoryScss
   echo "${TEXT_COLOR_RED}$directoryScss${TEXT_NORMAL} done"
   echo "${TEXT_COLOR_RED}$fileBaseScss${TEXT_NORMAL} done"
-  echo "${TEXT_COLOR_RED}$directoryScss${TEXT_NORMAL} done"
+  echo "${TEXT_COLOR_RED}$directoryScss/${TEXT_NORMAL} done"
 
 else
   echo "${TEXT_BOLD}Don't play with me boy!${TEXT_NORMAL}"
