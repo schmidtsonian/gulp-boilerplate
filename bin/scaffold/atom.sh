@@ -12,7 +12,7 @@ directoryScss=$PATH_SCSS_ATOMS/$atomName
 fileRootScss=$directoryScss/_atom-$atomName.scss
 fileBaseScss=$directoryScss/_atom-$atomName-[base].scss
 
-filePug=$PATH_PUGS_ATOMS/_atom-$atomName.pug
+filePug=$PATH_PUGS_ATOMS/_atom_$atomNameSnakeCase.pug
 
 echo "mixin atom_$atomNameSnakeCase()" > $filePug
 

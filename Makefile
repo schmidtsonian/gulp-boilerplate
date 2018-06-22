@@ -4,39 +4,43 @@ all:
 help:
 	@bin/help.sh
 
+# Build
 deps:
 	chmod -R +x bin/
-	@bin/deps.sh
+	@bin/build/deps.sh
 
 bw:
-	@bin/build-and-watch.sh
+	@bin/build/build-and-watch.sh
 
 rebuild:
-	@bin/rebuild.sh
+	@bin/build/rebuild.sh
 
 build:
-	@bin/build.sh
+	@bin/build/build.sh
 
 watch:
-	@bin/watch.sh
+	@bin/build/watch.sh
 
 clean:
-	@bin/clean.sh
+	@bin/build/clean.sh
 
 clean-public:
-	@bin/clean-public.sh
+	@bin/build/clean-public.sh
 
 
 
-
+# Scaffold
 template:
-	@bin/template.sh
+	@bin/scaffold/template.sh
 
 remove-template:
-	@bin/remove-template.sh
+	@bin/scaffold/remove-template.sh
 
 atom:
-	@bin/atom.sh
+	@bin/scaffold/atom.sh
+
+remove-atom:
+	@bin/scaffold/remove-atom.sh
 
 scaffold:
-	@bin/scaffold.sh
+	@bin/scaffold/scaffold.sh
