@@ -8,16 +8,21 @@
     "deps": "bin/build/deps.sh",
     "bw": "bin/build/build-and-watch.sh",
     "rebuild": "bin/build/rebuild.sh",
+
     "build": "bin/build/build.sh",
     "watch": "bin/build/watch.sh",
+
     "clean": "bin/build/clean.sh",
     "clean-public": "bin/build/clean-public.sh",
+
     "template": "bin/scaffold/template.sh",
     "remove-template": "bin/scaffold/remove-template.sh",
     "atom": "bin/scaffold/atom.sh",
     "remove-atom": "bin/scaffold/remove-atom.sh",
     "organism": "bin/scaffold/organism.sh",
     "remove-organism": "bin/scaffold/remove-organism.sh",
+    "molecule": "bin/scaffold/molecule.sh",
+    "remove-molecule": "bin/scaffold/remove-molecule.sh",
     "scaffold": "bin/scaffold/scaffold.sh"
   },
   "repository": {
