@@ -1,22 +1,24 @@
 experiment gulp boilerplate
 
 
-Dependencies
+##Dependencies
 - Node.js
 
-Features:
+##Features:
 - SCSS
 - PUG
 - JavaScript babel
 - JSON files to fill content
-- "npm run .." command to scaffold the project
+- ``npm run <command>`` where ``<command>`` is one of: deps, bw, rebuild, build, watch, clean, template, remove-template, atom, remove-atom, organism, remove-organism, molecule
 
-How to use it:
+##How to use it:
 - Clone repository
 - run: ``chmod -R +x bin/``
+- run: ``npm run deps``
 - run: ``npm run help``
 
-TODO:
-- Add scaffold command
-- Add remove scaffold command
+##TODO:
 - Validate files when run scaffold command
+- Add reference into scss file
+- Integrate templates
+- Integrates yeoman
